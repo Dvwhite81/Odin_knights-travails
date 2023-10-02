@@ -1,3 +1,5 @@
-import { makeBoard } from "./html-elements";
+import { createMessage } from "./UI";
+import { makeBoard } from "./Board";
 
+createMessage();
 makeBoard();

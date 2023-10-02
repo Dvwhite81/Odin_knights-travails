@@ -6,7 +6,8 @@
 
 body {
     display: grid;
-    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-rows: 2fr 7.5fr 0.5fr;
+    max-height: 100vh;
     min-height: 100vh;
 }
 
@@ -45,7 +46,7 @@ body {
     width: 80%;
 }
 
-img.move {
+.move {
     height: 100%;
     width: 100%;
 }
