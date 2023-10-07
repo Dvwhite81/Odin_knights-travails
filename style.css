@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 2fr 7.5fr 0.5fr;
+    max-height: 100vh;
+    min-height: 100vh;
+}
+
+#message-div {
+    text-align: center;
+}
+
+#container {
+    display: grid;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+#gameboard {
+    border: 2px solid;
+    display: grid;
+    grid-row: 2;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    height: 80vh;
+    margin: auto;
+    width: 80vh;
+}
+
+.square {
+    display: flex;
+    height: 100%;
+    width: 100%
+}
+
+#knight,
+.target {
+    height: 80%;
+    margin: auto;
+    width: 80%;
+}
+
+.move {
+    height: 100%;
+    width: 100%;
+}
+
+.current-knight {
+    border: 5px outset gold;
+}
