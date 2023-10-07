@@ -1,10 +1,16 @@
 {
   "name": "odin_knights-travails",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Dvwhite81/Odin_knights-travails.git"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
