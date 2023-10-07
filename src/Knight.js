@@ -3,7 +3,7 @@ import { buildElement } from "./Board";
 const makeKnight = () => {
   const knightEl = buildElement("img", {
     id: "knight",
-    src: "src/images/knight.png",
+    src: "/src/images/knight.png",
   });
   return knightEl;
 };
@@ -23,7 +23,7 @@ target square, and another file is silly
 const makeTarget = () => {
   const target = buildElement("img", {
     className: "target",
-    src: "src/images/target.png",
+    src: "/src/images/target.png",
   });
   return target;
 };
@@ -38,7 +38,7 @@ const placeTarget = (square) => {
 const makeMove = () => {
     const target = buildElement("img", {
         className: "move",
-        src: "src/images/move.png",
+        src: "/src/images/move.png",
       });
       return target;
 }
