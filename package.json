@@ -1,16 +1,23 @@
 {
   "name": "odin_knights-travails",
   "version": "1.0.0",
+  "repository": {
+    "url": "git+https://github.com/Dvwhite81/Odin_knights-travails.git"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode=development",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0",
+    "gh-pages": "^6.0.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   }
